@@ -121,15 +121,14 @@ removeToDoItem(todoId);
 function clearCompletedTasks() {
   // Implement the logic to clear completed tasks here
   for( let i = 0; i< todoItems.length ; i++ ){
-    if (todoItems[i].id === todoId){
-      todoItems[i].completed = true;{
-        todoItems.splice([i],1);
-        console.log("this task has been removed completely");
-
+    if (todoItems[i].completed){
+        todoItems.splice(i,1);
       }
   }
-  }
 }
+
+
+
 // You can write your own tests here if you would like to test
 // your code before using the automated tests
 // For example, you could run:
