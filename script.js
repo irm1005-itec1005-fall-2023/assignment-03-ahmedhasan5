@@ -8,7 +8,7 @@
  * 1. Add a new todo item
  * 2. Delete a todo item
  * 3. Mark a todo item as completed
- * 4. Delete a todo item
+ * 4. Delete a todo itxem
  * 5. Clear all completed todos
  *
  * The following code is the starting point for this assignment.
@@ -122,10 +122,11 @@ function clearCompletedTasks() {
   // Implement the logic to clear completed tasks here
   for( let i = 0; i< todoItems.length ; i++ ){
     if (todoItems[i].completed){
-        todoItems.splice(i,1);
+        todoItems.splice(i, 1);
       }
   }
 }
+
 
 
 
